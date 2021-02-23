@@ -44,39 +44,3 @@ def get_data():
 
 if __name__ == '__main__':
     get_data()
-
-
-
-
-
-'''
-#AES-CBC解密
-def AES_CBC_decrypt(text):
-    # print("AES_CBC_decrypt")
-    # print(" key  :", key, type(key))
-    # print(" iv   :", iv, type(iv))
-    # print("plain :", text, type(text))
-
-    key = "jo8j9wGw%6HbxfFn"
-    iv = "0123456789ABCDEF"
-
-    text = bytes.fromhex(text.encode('utf-8'))
-    key = bytes.fromhex(key.encode('utf-8'))
-    iv  = bytes.fromhex(iv.encode('utf-8'))
-
-    mode = AES.MODE_CBC
-    cryptos = AES.new(key, mode, iv)
-
-    plain_text = bytes.hex(cryptos.decrypt(text))
-
-    # print("cipher:", plain_text, type(plain_text))
-    # print("************************************************")
-
-    return plain_text
-
-
-print(AES_CBC_decrypt(request('1')))
-
-
-#key:str(binascii.b2a_hex(str.encode('8sHRRhqNAdXnSvpA')))[2:-1]
-'''
